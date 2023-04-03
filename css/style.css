@@ -1,0 +1,185 @@
+/* modifications for all document */
+* {
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+
+    /* checking borders */
+    /* border: 1px solid red; */
+  }
+  
+  /* documents root element and colors */
+  :root {
+    --dark: #FF896B;
+    --dark2: #E8D4B4;
+    --mid: #bdb09b;
+    --lb: #EBE6E6;
+    --light: #F3F3F3;
+    font-size: 75%;
+  }
+
+  body {
+    background: var(--light);
+    color: var(--dark2);
+    margin: 0;
+    padding: 20vh;
+  }
+  
+/***************/
+/* top of page */
+/***************/
+
+  /* modifications for header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
+  }
+
+  /* header 4 modifications */
+  header h4 {
+    font-size: 2.0rem;
+    display: inline-flex;
+  }
+
+  /* highscore line and change color when */
+  #view-high-scores {
+    font-weight: lighter;
+    color: var(--dark);
+  }
+
+  #view-high-scores:hover {
+    cursor: pointer;
+    color: var(--dark2)
+  }
+
+  /* timer text modifications */
+ .timer {
+    font-weight: bold;
+    font-size: 2.0rem;
+    color: var(--dark);
+  }
+
+/****************/
+/* Main content */
+/****************/
+
+/* content containing start and questions */
+.container {
+    padding: 15px;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+  }
+
+/* modifications for font "coding quiz challenge" */
+h1 {
+    color: var(--dark);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+/* modifications for paragraph on start page */
+p {
+    color: var(--dark);
+    font-size: 25px;
+}
+
+.questions {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    margin: auto;
+}
+
+/* hides end and high scores on page until called */
+.hide {
+      display: none;
+}
+
+/* modifications for questions asked */
+#question {
+    text-align: center;
+    color: var(--dark);
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+/* buttons- start and question */
+.btn {
+    border: none;
+    background: var(--dark2);
+    color: var(--light);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: var(--lb);
+    cursor: pointer;
+}
+
+.btn-grid {
+    margin: 25px 0;
+    display: grid;
+    grid-gap: 15px;
+}
+
+/* start quiz button placement */
+.startend {
+    width: 15%;
+    margin-top: 5px;
+}
+
+/* answer buttons placement */
+.answerbtn {
+    text-align: left;
+    font-size: 1.75vw;
+}
+
+/* modifications for right/wrong text for answers */
+.banner {
+    font-size: 15px;
+    text-align: center;
+    color: var(--mid);
+    font-style: italic;
+}
+
+.banner h2 {
+    border-top: 2px solid var(--dark);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* List for High Scores modifications */
+ol {
+    list-style-type: number;
+}
+
+li {
+    font-size: 3.0vw;
+}
+
+/* media query for smaller screens */
+@media screen and (max-width: 1000x) {
+
+    .btn {
+        font-size: 1rem;
+        margin: 16px 0px 0px 0px;
+    }
+
+    #question {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    p {
+        font-size: 3.0vw;
+    }
+
+}
